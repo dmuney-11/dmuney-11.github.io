@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Fantasy Power Rankings</title>
-  <meta name="description" content="Fantasy power rankings with each writeup followed by its video embed." />
   <style>
-:root{--bg:#0b0c10;--card:#111318;--ink:#e8ebf0;--muted:#9aa4b2;--accent:#8b5cf6}
+:root{
+  --bg:#0b0c10;--card:#111318;--ink:#e8ebf0;--muted:#9aa4b2;--accent:#8b5cf6;
+}
 *{box-sizing:border-box}
 body{margin:0;background:linear-gradient(180deg,#0b0c10 0%,#0d1018 100%);
   color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
@@ -23,18 +24,17 @@ main{padding:24px 16px 64px}
 .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
   border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px;margin:14px 0;
   box-shadow:0 20px 50px rgba(0,0,0,.35)}
-.hdr{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.rankhead{display:flex;align-items:center;gap:12px;margin-bottom:10px}
 .badge{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;
   background:#1a1f2b;border:1px solid rgba(255,255,255,.1);font-weight:700;color:var(--accent)}
-h2{margin:0 0 6px;font-size:clamp(18px,3.4vw,24px)}
-.meta{color:var(--muted);font-size:13px;margin-top:-2px}
-pre.verbatim{white-space:pre-wrap;word-wrap:break-word;margin:0}
+h2{margin:0;font-size:clamp(18px,3.4vw,24px)}
+.meta{color:var(--muted);font-size:13px;margin-top:2px}
+pre.blurb{white-space:pre-wrap;word-wrap:break-word;margin:0}
 .video{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;overflow:hidden;
-  background:#0b0c10;display:block;outline:1px solid rgba(255,255,255,.06);margin-top:12px}
+  background:#0b0c10;display:block;outline:1px solid rgba(255,255,255,.06);margin-top:10px}
 .tools{display:flex;gap:8px;margin-top:8px}
 button.copy{background:#121622;border:1px solid rgba(139,92,246,.45);color:var(--ink);
   padding:6px 10px;border-radius:10px;cursor:pointer}
-.note{font-size:13px;color:var(--muted)}
 .footer{color:var(--muted);font-size:13px;margin-top:24px}
 </style>
 </head>
@@ -42,289 +42,145 @@ button.copy{background:#121622;border:1px solid rgba(139,92,246,.45);color:var(-
   <header>
     <div class="wrap">
       <h1>Fantasy Power Rankings</h1>
-      <div class="sub">Each ranking's writeup is followed by its video embed (Drive or YouTube).</div>
       <nav class="toc" id="toc"></nav>
     </div>
   </header>
-
   <main class="wrap">
     
-    <section class="card rank-card" id="rank-1" data-rank="1" data-drive-id="19up7qs6kZl_qItmbCabHvGkKhSGxKVEI" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">1</span>
-        <div>
-          <h2>1 Bumbling Idiots ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">1 Bumbling Idiots ✅
-
-Your team is truly a sight to behold.  You could tell me that this team was drafted in 2020 and and I’d nod politely and ask how Keenan Allen’s retirement is going.  But if you told me a team whose best WR was a 52 year old Keenan Allen, with Danny Dimes leading the charge at QB would be contending for the #1 spot in 2025, I would have said, “Jake?” - Close enough I guess.  But JT continues to carry this team to an extreme degree.  Somewhere above, Jim Irsay’s throwing the kind of party heaven probably didn’t approve. Nose beers, a harem of angels and a drink in hand, watching JT carve defenses. I’m happy for him, I really am. But still… Arrest Irsay, forever.
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-1">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+    <section class="card" id="rank-1" data-rank="1" data-team="Bumbling Idiots">
+      <div class="rankhead"><span class="badge">1</span><div><h2>Bumbling Idiots</h2></div></div>
+      <pre class="blurb">Your team is truly a sight to behold.  You could tell me that this team was drafted in 2020 and and I’d nod politely and ask how Keenan Allen’s retirement is going.  But if you told me a team whose best WR was a 52 year old Keenan Allen, with Danny Dimes leading the charge at QB would be contending for the #1 spot in 2025, I would have said, “Jake?” - Close enough I guess.  But JT continues to carry this team to an extreme degree.  Somewhere above, Jim Irsay’s throwing the kind of party heaven probably didn’t approve. Nose beers, a harem of angels and a drink in hand, watching JT carve defenses. I’m happy for him, I really am. But still… Arrest Irsay, forever.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/19up7qs6kZl_qItmbCabHvGkKhSGxKVEI/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-1">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-2" data-rank="2" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">2</span>
-        <div>
-          <h2>2 Useless Fkuks ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">2 Useless Fkuks ✅
+    <section class="card" id="rank-2" data-rank="2" data-team="Useless Fkuks">
+      <div class="rankhead"><span class="badge">2</span><div><h2>Useless Fkuks</h2></div></div>
+      <pre class="blurb">In an era where the bellcow RB is going the way of the dodo, you have incredibly managed to land at least 3.5, if not 4 of them - assuming you count D’andre “we bring in DJ moore for short yardage” Swift.  You’ve faced adversity the way Swift faces a designed run between the tackles, with a hard cut to the outside and, somehow, spectacular results.
 
-In an era where the bellcow RB is going the way of the dodo, you have incredibly managed to land at least 3.5, if not 4 of them - assuming you count D’andre “we bring in DJ moore for short yardage” Swift.  You’ve faced adversity the way Swift faces a designed run between the tackles, with a hard cut to the outside and, somehow, spectacular results.
 
-Lamar Jackson injury? No worries, Ahuasca Aaron has got this.  Tyreek dead? The generational plodders Sutton and Pittman will fill the void.  It’s truly sensational stuff, and it&#x27;s earned you copious amounts of homework and an almost free-roll to a shot at a back-to-back ship this season.  Truly inspirational stuff.
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-2">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+
+Lamar Jackson injury? No worries, Ahuasca Aaron has got this.  Tyreek dead? The generational plodders Sutton and Pittman will fill the void.  It’s truly sensational stuff, and it's earned you copious amounts of homework and an almost free-roll to a shot at a back-to-back ship this season.  Truly inspirational stuff.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1yNd0va6w0aRMiA0vn-w3x5iTI2UtfwHj/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-2">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-3" data-rank="3" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">3</span>
-        <div>
-          <h2>3 The Real Slim Pickens ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">3 The Real Slim Pickens ✅
-
-This is the ideal fantasy team.  You may not like it, but this is what peak robust RB drafting looks like.  Two absolutely ELITE, GENERATIONAL running back talents, and I am up to my eyeballs in WR2s. Crashee Rice has come careening off of his suspension and I look forward to mowing down all who dare to swerve into my lane.  It&#x27;s all gas, no brakes, straight to the finish line. Buckle up buckaroos. 
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-3">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+    <section class="card" id="rank-3" data-rank="3" data-team="The Real Slim Pickens">
+      <div class="rankhead"><span class="badge">3</span><div><h2>The Real Slim Pickens</h2></div></div>
+      <pre class="blurb">This is the ideal fantasy team.  You may not like it, but this is what peak robust RB drafting looks like.  Two absolutely ELITE, GENERATIONAL running back talents, and I am up to my eyeballs in WR2s. Crashee Rice has come careening off of his suspension and I look forward to mowing down all who dare to swerve into my lane.  It's all gas, no brakes, straight to the finish line. Buckle up buckaroos.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/13ore8a_l_IOws1N61sSH4ouXc-CQkukX/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-3">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-4" data-rank="4" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">4</span>
-        <div>
-          <h2>4 Onii Chan ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">4 Onii Chan ✅
-
-You know Cody, your team is actually legit pretty good this year.  And I know, that you know, that this pains me physically to put in writing.  You executed the 0 RB strat pretty flawlessly, with a WR core that has me drooling like I’m five nooners deep into my 3rd FBI challenge.  Also, our league has collectively allowed you to amass a bench full of high value hand-cuffs, one injury away from creating an unstoppable juggernaut.  I am saying all of this as your friend, so that you know what I am about to say is true - It&#x27;s time bro.  Just rip the bandaid and send Nick Chubb off to the big blue tent in the sky.  
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-4">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+    <section class="card" id="rank-4" data-rank="4" data-team="Onii Chan">
+      <div class="rankhead"><span class="badge">4</span><div><h2>Onii Chan</h2></div></div>
+      <pre class="blurb">You know Cody, your team is actually legit pretty good this year.  And I know, that you know, that this pains me physically to put in writing.  You executed the 0 RB strat pretty flawlessly, with a WR core that has me drooling like I’m five nooners deep into my 3rd FBI challenge.  Also, our league has collectively allowed you to amass a bench full of high value hand-cuffs, one injury away from creating an unstoppable juggernaut.  I am saying all of this as your friend, so that you know what I am about to say is true - It's time bro.  Just rip the bandaid and send Nick Chubb off to the big blue tent in the sky.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1rXNmQXZ68PumsoclzttPC5hTB65BiPmG/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-4">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-5" data-rank="5" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">5</span>
-        <div>
-          <h2>5 Dusted RBs Retirement Home</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">5 Dusted RBs Retirement Home
+    <section class="card" id="rank-5" data-rank="5" data-team="Dusted RBs Retirement Home">
+      <div class="rankhead"><span class="badge">5</span><div><h2>Dusted RBs Retirement Home</h2></div></div>
+      <pre class="blurb">https://drive.google.com/file/d/1cAu5hE04KpGAMsaJHPziRyao0JhAxumc/view?usp=drive_link
 
-In spite of the walloping that was just delivered to you courtesy of yours truly, there are some real bright spots on this roster.  Arguably the best WR room in the league, all while Nico has been doing his best Calvin Ridley impersonation. On the other hand, when it comes to your RBs, your absolute commitment to the bit is extremely commendable.  My main critique is that I think “dusted” may be too favorable an adjective here as it implies that they were at one point not dusty.  Oh, and has anyone told you that you wrote the best power rankings of the year?
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-5">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+
+
+In spite of the walloping that was just delivered to you courtesy of yours truly, there are some real bright spots on this roster.  Arguably the best WR room in the league, all while Nico has been doing his best Calvin Ridley impersonation. On the other hand, when it comes to your RBs, your absolute commitment to the bit is extremely commendable.  My main critique is that I think “dusted” may be too favorable an adjective here as it implies that they were at one point not dusty.  Oh, and has anyone told you that you wrote the best power rankings of the year?</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1cAu5hE04KpGAMsaJHPziRyao0JhAxumc/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-5">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-6" data-rank="6" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">6</span>
-        <div>
-          <h2>6 Came and Wentz ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">6 Came and Wentz ✅
+    <section class="card" id="rank-6" data-rank="6" data-team="Came and Wentz">
+      <div class="rankhead"><span class="badge">6</span><div><h2>Came and Wentz</h2></div></div>
+      <pre class="blurb">https://drive.google.com/file/d/1MSsr7QA0-zn48Eocer81fbnte3a7-pwP/view?usp=sharing
+
+
 
 This ranking comes with a breaking news story brought to you by a fearless anonymous whistleblower, who received the following texts from Mikey on Sunday morning, minutes before lock:
 
 
 
+
+
+
+
 You are reading that right folks.  Your co-commissioner wants to BAN people for properly setting their lineup.  Now before you all rush to judgement, let us practice empathy.  Who among us, when faced with the likes of Xavier Hutchinsen, Demario Douglas and Evan Engram in the flex, wouldn’t consider some form of sabotage to prevent an embarrassing loss.  
 
-I hope we can all grow, and learn from this, and emerge stronger as a league as a result.  We are committed to transparency in this league and will ensure that governance remains fair and balanced.  To celebrate our strength, please use promo code IMWITHJAKE for a free $10 SGP on draftkings (minimum 10 legs).
 
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-6">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+
+I hope we can all grow, and learn from this, and emerge stronger as a league as a result.  We are committed to transparency in this league and will ensure that governance remains fair and balanced.  To celebrate our strength, please use promo code IMWITHJAKE for a free $10 SGP on draftkings (minimum 10 legs).</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1MSsr7QA0-zn48Eocer81fbnte3a7-pwP/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-6">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-7" data-rank="7" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">7</span>
-        <div>
-          <h2>7 Gator needs his GAT 🐊🔫 ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">7 Gator needs his GAT 🐊🔫 ✅
-
-Sean, as a tight-end enjoyer, I am sure you can agree, it was an absolutely ELECTRIC national tight-ends week.  Kicked off by the best TE in the league absolutely smashing on TNF.  That’s right, Orande Gadsen babyyyyy.  I am sure it had to hurt compiling exactly 0 TE points on this sacred day, so I won’t belabor the point too much.  We are all keeping you in our thoughts and prayers, and hope that you will soon be able to start a TE in the flex like you have always wanted. 
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-7">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+    <section class="card" id="rank-7" data-rank="7" data-team="Gator needs his GAT 🐊🔫">
+      <div class="rankhead"><span class="badge">7</span><div><h2>Gator needs his GAT 🐊🔫</h2></div></div>
+      <pre class="blurb">Sean, as a tight-end enjoyer, I am sure you can agree, it was an absolutely ELECTRIC national tight-ends week.  Kicked off by the best TE in the league absolutely smashing on TNF.  That’s right, Orande Gadsen babyyyyy.  I am sure it had to hurt compiling exactly 0 TE points on this sacred day, so I won’t belabor the point too much.  We are all keeping you in our thoughts and prayers, and hope that you will soon be able to start a TE in the flex like you have always wanted.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1baGOK3EKsL4-q1B2eURyHBRweAw5u2Ff/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-7">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-8" data-rank="8" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">8</span>
-        <div>
-          <h2>8 Olave Garden ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">8 Olave Garden ✅
-
-What can we really say about this squad that hasn’t already been said. You doubted the Samoan Slammer and started Bengals D and it cost you the win.  You should definitely fire the person who gave you that advice.  On the bright side, Olave is absolutely cooking and he’s got a 26 year old rookie QB who can start shuckin him some balls.   
-
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-8">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+    <section class="card" id="rank-8" data-rank="8" data-team="Olave Garden">
+      <div class="rankhead"><span class="badge">8</span><div><h2>Olave Garden</h2></div></div>
+      <pre class="blurb">What can we really say about this squad that hasn’t already been said. You doubted the Samoan Slammer and started Bengals D and it cost you the win.  You should definitely fire the person who gave you that advice.  On the bright side, Olave is absolutely cooking and he’s got a 26 year old rookie QB who can start shuckin him some balls.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/11r8LYshVyIyKjYyGtGJ32vAMUwkvdrVy/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-8">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-9" data-rank="9" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">9</span>
-        <div>
-          <h2>9 Roy The Rocket ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">9 Roy The Rocket ✅
+    <section class="card" id="rank-9" data-rank="9" data-team="Roy The Rocket">
+      <div class="rankhead"><span class="badge">9</span><div><h2>Roy The Rocket</h2></div></div>
+      <pre class="blurb">https://drive.google.com/file/d/1FBAEPoR5krARHoqWiMJSg6WeZ_XunFgX/view?usp=drive_link
 
-Jake, my dude, you have been absolutely blasted by injuries this year. But in typical fashion, you have exceeded expectations and remain in the hunt.  I know better than to count you out, that’s the difference between you and the rest of the league, you never go back to the carpet store. 
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-9">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+
+
+Jake, my dude, you have been absolutely blasted by injuries this year. But in typical fashion, you have exceeded expectations and remain in the hunt.  I know better than to count you out, that’s the difference between you and the rest of the league, you never go back to the carpet store.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1FBAEPoR5krARHoqWiMJSg6WeZ_XunFgX/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-9">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-11" data-rank="11" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">11</span>
-        <div>
-          <h2>11 Micro Penix Numbers ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">11 Micro Penix Numbers ✅
-
-This has been a rough year Veezy, but I truly think your record does not reflect the strength of your team.  You have an extremely boom-bust roster, and although your team has been busting more than Johnny Sins this year, I think you have a real shot at making a run if all the pieces fall into place. 
-
-</pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-11">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+    <section class="card" id="rank-10" data-rank="10" data-team="Micro Penix Numbers">
+      <div class="rankhead"><span class="badge">10</span><div><h2>Micro Penix Numbers</h2></div></div>
+      <pre class="blurb">This has been a rough year Veezy, but I truly think your record does not reflect the strength of your team.  You have an extremely boom-bust roster, and although your team has been busting more than Johnny Sins this year, I think you have a real shot at making a run if all the pieces fall into place.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1mxq3JBd2g7QIISRYxhZwM8lONuyKpIvF/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-10">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-10" data-rank="10" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">10</span>
-        <div>
-          <h2>10 D. Adams Family ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">10 D. Adams Family ✅
-
-Evan, I have good news and bad news.  The good news is you are 12 and you have your whole life ahead of you, the possibilities are nearly limitless.  The bad news is that amongst those limitless possibilities, winning fantasy this year is not one of them.  
- </pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-10">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+    <section class="card" id="rank-11" data-rank="11" data-team="D. Adams Family">
+      <div class="rankhead"><span class="badge">11</span><div><h2>D. Adams Family</h2></div></div>
+      <pre class="blurb">Evan, I have good news and bad news.  The good news is you are 12 and you have your whole life ahead of you, the possibilities are nearly limitless.  The bad news is that amongst those limitless possibilities, winning fantasy this year is not one of them.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1WLlc1kJuEK2C_hZsYvVNarRgpqESwtrE/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-11">Copy link</button></div>
     </section>
     
-    <section class="card rank-card" id="rank-12" data-rank="12" data-drive-id="" data-yt-id="">
-      <div class="hdr">
-        <span class="badge">12</span>
-        <div>
-          <h2>12 Buddy Boyz Dexter ✅</h2>
-          <div class="meta">Verbatim writeup</div>
-        </div>
-      </div>
-      <pre class="verbatim">12 Buddy Boyz Dexter ✅
-
-Dex, tbh, I was really struggling when coming up with a write up for your team.  Something just felt off.  And then I looked a bit closer, and it occurred to me. My god, there&#x27;s a lot of whites on this team. Then it hit me like a ton of bricks. Holy fuck, this retard is STARTING THREE TEs this week.  Not sure if you were just baiting me into this one, but you know the rules. </pre>
-      <iframe class="video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <div class="tools">
-        <button class="copy" data-target="#rank-12">Copy link</button>
-        <span class="note">Set <code>data-drive-id</code> or <code>data-yt-id</code> on this section to load the video.</span>
-      </div>
+    <section class="card" id="rank-12" data-rank="12" data-team="Buddy Boyz Dexter">
+      <div class="rankhead"><span class="badge">12</span><div><h2>Buddy Boyz Dexter</h2></div></div>
+      <pre class="blurb">Dex, tbh, I was really struggling when coming up with a write up for your team.  Something just felt off.  And then I looked a bit closer, and it occurred to me. My god, there's a lot of whites on this team. Then it hit me like a ton of bricks. Holy fuck, this retard is STARTING THREE TEs this week.  Not sure if you were just baiting me into this one, but you know the rules.</pre>
+      <iframe class="video" src="https://drive.google.com/file/d/1baGOK3EKsL4-q1B2eURyHBRweAw5u2Ff/preview" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="tools"><button class="copy" data-target="#rank-12">Copy link</button></div>
     </section>
     
     <div class="footer">
-      <p>Tip: For Google Drive, make the file viewable and paste the ID into the section's <code>data-drive-id</code>. URL pattern: <code>https://drive.google.com/file/d/FILE_ID/preview</code></p>
+      <p>Share this page link in SMS or your message board. Each team card has a copyable anchor link.</p>
     </div>
   </main>
-
   <script>
 // Build TOC
 const toc = document.getElementById('toc');
-document.querySelectorAll('section.rank-card').forEach(sec=>{
-  const rank = sec.getAttribute('data-rank')||'?';
+document.querySelectorAll('section.card[data-rank]').forEach(sec=>{
+  const r = sec.getAttribute('data-rank');
+  const team = sec.getAttribute('data-team');
   const a = document.createElement('a');
-  a.href = '#'+sec.id;
-  a.textContent = rank==='?' ? sec.querySelector('h2').textContent : `#${rank}`;
+  a.href = '#rank-'+r; a.textContent = `${r}. ${team}`;
   toc.appendChild(a);
 });
 
-// Initialize Drive/YouTube players
-document.querySelectorAll('section.rank-card').forEach(sec=>{
-  const iframe = sec.querySelector('iframe.video');
-  if(!iframe) return;
-  const driveId = sec.getAttribute('data-drive-id');
-  const ytId = sec.getAttribute('data-yt-id');
-  if(driveId){
-    iframe.src = `https://drive.google.com/file/d/${driveId}/preview`;
-  }else if(ytId){
-    iframe.src = `https://www.youtube-nocookie.com/embed/${ytId}`;
-  }
-});
-
-// Copy link
+// Copy per-team link
 document.querySelectorAll('button.copy').forEach(btn=>{
   btn.addEventListener('click', async ()=>{
     const target = btn.getAttribute('data-target') || '';
     const url = location.origin + location.pathname + target;
-    try {
-      await navigator.clipboard.writeText(url);
-      btn.textContent='Copied!'; setTimeout(()=>btn.textContent='Copy link',1200);
-    } catch (e) { alert('Copied: '+url); }
+    try{ await navigator.clipboard.writeText(url); btn.textContent='Copied!'; setTimeout(()=>btn.textContent='Copy link',1200);}
+    catch(e){ alert('Copied: '+url); }
   });
 });
 </script>
